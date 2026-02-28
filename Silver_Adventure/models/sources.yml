@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: excel_data
+    catalog: workspace
+    schema: default
+    tables:
+      - name: nps_data    
+      - name: sales_credit_data 

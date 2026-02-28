@@ -1,0 +1,93 @@
+[0m21:27:21.613557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff4602d50950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff4602f88650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff4602d512e0>]}
+
+
+============================== 21:27:22.786119 | 2bd3f871-c9b8-4e6a-bcf2-0c02462f0f85 ==============================
+[0m21:27:22.786119 [info ] [MainThread]: Running with dbt=1.11.6
+[0m21:27:22.787766 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'introspect': 'True', 'target_path': 'None', 'write_json': 'True', 'static_parser': 'True', 'printer_width': '80', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/spark-83cf1d38-8da2-48a6-95f3-bd/.dbt', 'log_format': 'default', 'cache_selected_only': 'False', 'empty': 'None', 'debug': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt init Silver-Adventure', 'log_path': 'logs', 'warn_error': 'None', 'no_print': 'None'}
+[0m21:27:22.800278 [info ] [MainThread]: Creating dbt configuration folder at /home/spark-83cf1d38-8da2-48a6-95f3-bd/.dbt
+[0m21:27:22.802361 [error] [MainThread]: Encountered an error:
+
+[0m21:27:22.806082 [error] [MainThread]: Traceback (most recent call last):
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/dbt/task/init.py", line 324, in run
+    project_name = self.get_valid_project_name()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/dbt/task/init.py", line 278, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/click/termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/click/termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m21:27:22.807654 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 1.4834292, "process_in_blocks": "14472", "process_kernel_time": 0.193682, "process_mem_max_rss": "101892", "process_out_blocks": "0", "process_user_time": 1.375542}
+[0m21:27:22.808599 [debug] [MainThread]: Command `dbt init` failed at 21:27:22.808445 after 1.48 seconds
+[0m21:27:22.809387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff46020717c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff46023b1850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff46023445f0>]}
+[0m21:27:22.810219 [debug] [MainThread]: Flushing usage events
+[0m21:27:22.870385 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:35:16.627824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff36d844fe00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff36d8d12bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff36d7c9d340>]}
+
+
+============================== 21:35:16.631748 | 565f3e10-4a7e-4853-b065-c7ac3ba5f99f ==============================
+[0m21:35:16.631748 [info ] [MainThread]: Running with dbt=1.11.6
+[0m21:35:16.633322 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'debug': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'profiles_dir': '/home/spark-83cf1d38-8da2-48a6-95f3-bd/.dbt', 'warn_error': 'None', 'log_format': 'default', 'partial_parse': 'True', 'quiet': 'False', 'log_cache_events': 'False', 'log_path': 'logs', 'target_path': 'None', 'invocation_command': 'dbt init Silver_Adventure', 'version_check': 'True', 'introspect': 'True', 'no_print': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'printer_width': '80', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager'}
+[0m21:35:16.668819 [debug] [MainThread]: Starter project path: /local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/dbt/include/starter_project
+[0m21:35:18.277936 [info ] [MainThread]: 
+Your new dbt project "Silver_Adventure" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:35:18.279072 [info ] [MainThread]: Setting up your profile.
+[0m21:35:18.280857 [error] [MainThread]: Encountered an error:
+
+[0m21:35:18.285820 [error] [MainThread]: Traceback (most recent call last):
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/dbt/task/init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/dbt/task/init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/click/termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/local_disk0/.ephemeral_nfs/envs/pythonEnv-83cf1d38-8da2-48a6-95f3-bdebcfb93860/lib/python3.12/site-packages/click/termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m21:35:18.288789 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 1.7902076, "process_in_blocks": "0", "process_kernel_time": 0.149243, "process_mem_max_rss": "102048", "process_out_blocks": "0", "process_user_time": 1.363364}
+[0m21:35:18.290177 [debug] [MainThread]: Command `dbt init` failed at 21:35:18.290038 after 1.79 seconds
+[0m21:35:18.291667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff36d7ccaf60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff36d720b950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xff36d720ba10>]}
+[0m21:35:18.292662 [debug] [MainThread]: Flushing usage events
+[0m21:35:18.350747 [debug] [MainThread]: An error was encountered while trying to flush usage events
