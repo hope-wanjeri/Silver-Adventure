@@ -7,7 +7,7 @@ This project demonstrates a production-ready dbt pipeline on Databricks to analy
 ## Data Modeling Strategy
 - **Bronze (Sources):** Raw Excel data ingested from Databricks Volumes.
 - **Silver (Transformation):** Logic to calculate Days Past Due (DPD) and join latest NPS scores.
-- **Gold (Marts):** Final `fct_credit_nps_analysis` table for business intelligence.
+- **Gold (Marts):** Final `sales_credit_data` and `nps_data` table for business intelligence.
 
 ## Key Metrics Calculated
 - **Credit Financing Cost:** `LOAN_PRICE - CASH_PRICE`
